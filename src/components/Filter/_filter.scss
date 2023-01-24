@@ -1,0 +1,38 @@
+@import "../../sass/constants";
+
+// Filter Section
+.filtered-results {
+  display: flex;
+  justify-content: space-between;
+  h3 {
+    font-weight: 400;
+    color: #71716f;
+  }
+}
+
+.filter {
+  display: flex;
+  color: $grayColor;
+  img {
+    margin-right: 0.2rem;
+  }
+}
+
+.select-lists {
+  width: 9rem;
+  height: 2.5rem;
+  padding: 0.2rem;
+  font-size: 1rem;
+  background-color: $searchBackgroundColor;
+  margin-right: 0.5rem;
+}
+
+.filtered-results-min {
+  display: none;
+}
+
+hr {
+  margin: 2rem 0;
+  border-color: $searchBackgroundColor;
+  background-color: $searchBackgroundColor;
+}

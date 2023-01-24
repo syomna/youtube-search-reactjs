@@ -1,0 +1,140 @@
+@import "./sass/constants";
+@import "./components/Navbar/navbar";
+@import "./components/Filter/filter";
+@import "./components/Channel/channel";
+@import "./components/Video/video";
+@import "./components/Spinner/spinner";
+@import "./components/Loader/loader";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+// Main Section
+
+main {
+  padding: 2rem 17% 0.6rem;
+  background-color: #fafafa;
+  height: 100vh;
+}
+
+@media only screen and (min-width: 970px) {
+  .video {
+    p {
+      padding-right: 0.6rem;
+    }
+    .video-infos {
+      display: flex;
+    }
+  }
+}
+@media only screen and (max-width: 970px) {
+  .video-description,
+  .time-ago {
+    display: none;
+  }
+  .video img {
+    height: $MediumVideoHeight;
+    width: $MediumVideoWidth;
+  }
+  .video .loader {
+    width: $MediumVideoWidth;
+  }
+  main {
+    padding: 2rem 22% 0.6rem;
+  }
+  .nav-bar {
+    padding: 0 20%;
+  }
+  .search-field {
+    width: 18rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .nav-bar {
+    padding: 0;
+    height: 4rem;
+    background-color: $redColor;
+    justify-content: stretch;
+    button {
+      background-color: $redColor;
+      color: white;
+      border: none;
+    }
+    input {
+      border: none;
+    }
+  }
+
+  .loader.nav-bar-loader {
+    display: none;
+  }
+  .logo,
+  .video-description,
+  .filtered-results,
+  .time-ago {
+    display: none;
+  }
+  .video .video-info {
+    display: block;
+  }
+  .youtube-icon,
+  .video-info,
+  .filtered-results-min,
+  .min-search {
+    display: block;
+  }
+
+  .spinner-container {
+    display: flex;
+    justify-content: center;
+  }
+  main {
+    padding: 0.8rem 0.9rem;
+  }
+
+  hr {
+    margin: 0.6rem 0 1.6rem;
+  }
+
+  .search-bar {
+    padding-right: 0.5rem;
+  }
+
+  .search-field {
+    width: 16rem;
+    border: none;
+    padding: 0 0.2rem;
+  }
+
+  .select-lists {
+    background-color: $lightShadeGray;
+  }
+
+  .video {
+    img {
+      height: $MinVideoHeight;
+      width: $MinVideoWidth;
+    }
+    h3 {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+    }
+    p {
+      margin: 0.2rem 0 0.2rem 0;
+    }
+    .duration {
+      right: 1.5rem;
+    }
+
+    .loader {
+      width: $MinVideoWidth;
+    }
+  }
+}

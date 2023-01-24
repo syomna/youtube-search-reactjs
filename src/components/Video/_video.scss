@@ -1,0 +1,47 @@
+@import "../../sass/constants";
+
+// Videos Section
+
+.video {
+  display: flex;
+  margin: 1rem 0;
+  img {
+    height: $videoImgHeight;
+    width: $videImgWidth;
+    margin-right: 0.6rem;
+  }
+
+  .video-thumb {
+    position: relative;
+  }
+
+  .duration {
+    width: 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 0.8rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+  }
+  h3 {
+    font-weight: bold;
+  }
+  p {
+    color: $grayColor;
+    font-size: 1rem;
+    margin: 0.4rem 0 0 0;
+  }
+  .video-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .loader {
+    width: $videImgWidth;
+    margin: -6px 0 0 0;
+  }
+}

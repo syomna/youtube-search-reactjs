@@ -1,0 +1,68 @@
+@import "../../sass/constants";
+/* Nav Bar Section */
+
+.nav-bar-container {
+  position: sticky;
+  top: 0rem;
+}
+.nav-bar {
+  height: 5rem;
+  background-color: white;
+  padding: 0 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0.08rem 0.2rem 0 rgba(0, 0, 0, 0.4);
+
+  button {
+    color: $grayColor;
+    background: $searchBackgroundColor;
+    height: 2rem;
+    padding: 0 1.5rem;
+    border-width: 0;
+    cursor: pointer;
+    border: 0.08rem solid #a2a2a2;
+  }
+  input {
+    border: 0.08rem solid #a2a2a2;
+  }
+  button:hover {
+    background-color: $lightShadeGray;
+  }
+}
+
+.logo {
+  height: 7rem;
+}
+
+.youtube-icon {
+  height: 3.5rem;
+  display: none;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+.search-bar {
+  height: 2rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding-right: 0.5rem;
+}
+
+.cancel-icon {
+  display: none;
+}
+.fa-xmark {
+  display: none;
+  padding-left: 0.5rem;
+  color: #a2a2a2;
+}
+
+.search-field {
+  height: 2rem;
+  width: 35rem;
+  padding: 0 4px;
+}
